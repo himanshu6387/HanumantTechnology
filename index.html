@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanumant Technology</title>
+    <link rel="shortcut icon" href="/images/hanumant-technology-favicon.png">
+    <link rel="stylesheet" href="hanumant.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        body {
+    height: 1200px;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* overflow-x: hidden; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-items {
+    margin: 10px;
+    position: relative;
+}
+
+@media screen and (max-width:918px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+.main-bg-image {
+    background-image: url('/images/it-banner-image.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-position: center;
+    z-index: 999;
+}
+
+.main-inner-content {
+    padding: 130px;
+    color: white;
+}
+
+.main-inner-content p {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.main-inner-content h1 {
+    font-size: 2.5em;
+}
+
+.main-inner-content hr {
+    height: 5px;
+    background-color: white;
+    margin-top: 8px;
+    margin-right: 48%;
+}
+
+.navbar a {
+    color: black;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    width: 0%;
+    right: 0%;
+    bottom: -100%;
+    height: 2px;
+    position: absolute;
+    background-color: purple;
+    transition: 0.6s ease;
+}
+
+.navbar a:hover::after {
+    width: 110%;
+}
+
+.service-container {
+    display: flex;
+    width: 90vw;
+    background-color: #f2f2f2;
+    position: absolute;
+    margin-top: 23px;
+    right: -16%;
+    display: none;
+}
+
+.developement-services,
+.designing-services,
+.marketing-services,
+.promotion-services {
+    width: 25%;
+    margin-left: 3%;
+}
+
+.developement-services h3,
+.designing-services h3,
+.marketing-services h3,
+.promotion-services h3 {
+    color: purple;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.service-container ul>li {
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.5s ease;
+
+}
+
+.service-container ul>li:hover {
+    transform: translateX(10px);
+
+}
+
+.service-container ul li a {
+    color: black;
+
+}
+
+.service-container ul li a:hover {
+    color: purple;
+
+}
+
+.navbar .service:hover .service-container {
+    display: block;
+    display: flex;
+}
+
+.bran{
+    width: 15vw;
+    background-color: #f2f2f2;
+    position: absolute;
+    margin-top: 16px;
+    right: 6%;
+    margin-top: 23px;
+    padding: 15px;
+    display: none;
+}
+.bran a{
+    font-size: 15px;
+}
+.bran a hr{
+    width: 40vw;
+}
+.b1{
+    margin-bottom: 10px;
+}
+.b2{
+    margin-top: 10px;
+}
+
+.navbar .branch:hover .bran{
+    display: block;
+}
+
+
+
+.about{
+    width: 90vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* margin: 5%; */
+    gap: 30px;
+    
+}
+.abouts{
+    width: 100%;
+    height: 100%;
+}
+.bg-image{
+    background-image: url(https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/h-about.png);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 58vh;
+    margin-left: 15%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    gap: 45px;
+}
+.content{
+    margin-right: 20%;
+    margin-top: 10%;
+    /* position: absolute; */
+}
+.content h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.content p{
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 10px;
+    line-height: 25px;
+}
+
+.common{
+    height: 150px;
+    width: 260px;
+    border-radius: 5px;
+    color: white;
+    margin-left:45.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.history{
+    background-color: goldenrod;
+    margin-top: -25px;
+}
+.mission{
+    background-color: #171F32;
+    transition: all 0.5s ease;
+}
+.mission:hover,.administration:hover{
+    background-color: goldenrod;
+
+}
+.administration{
+    margin-bottom: -28px;
+    background-color: #171F32;
+}
+
+i{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.super-card{
+    height: 180vh;
+    width: 100vw;
+    background-color: #e1ecee;
+    margin-top: 40px;
+}
+
+.card{
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.commoncard{
+    width: 400px;
+    height: 350px;
+    /* border: 2px solid black; */
+    margin-top: 60px;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+.card1 h2{
+    color: #21a7d0;
+}
+.card1 h1{
+    color:#171F32;
+}
+.card2{
+    background-image: linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/mern-stack-course-and-training.jpg);
+    background-size: cover;
+}
+.card2 h2{
+    text-align: center;
+    margin-top: -2%;
+    font-size: 28px;
+    color: white;
+}
+
+.card2:hover h2{
+    font-size: 0px;
+}
+
+.card2 h3{
+    color: white;
+    position: absolute;
+}
+
+
+.card3{
+    background-image:  linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/ser4.jpg);
+}
+
+.card3 h2{
+    text-align: center;
+    margin-top: -2%;
+    font-size: 28px;
+    color: white;
+}
+
+
+
+
+.card-inner{
+    width: 85%;
+    height: 85%;
+    background: rgba(17, 41, 88, 0.9);
+    margin-top: 28px;
+    margin-left: 28px;
+    transform: rotateY(90deg);
+    transition: all 0.3s ease;
+
+}
+.card-inner h3{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.card4{
+    background-image: linear-gradient(transparent, #273c66), url(https://www.hanumanttechnology.com/services_img/ser5.jpg);
+    background-size: cover;
+}
+
+.card4 h2,.card5 h2,.card6 h2{
+    color: white;
+    text-align: center;
+    margin-top: -2%;
+}
+
+.card2:hover h2,.card3:hover h2,.card4:hover h2,.card5:hover h2,.card6:hover h2,.card7:hover h2,.card8:hover h2,.card9:hover h2{
+    font-size: 0px;
+}
+.card2:hover .card-inner,.card3:hover .card-inner,.card4:hover .card-inner,.card5:hover .card-inner,.card6:hover .card-inner,.card7:hover .card-inners,.card8:hover .card-inners,.card9:hover .card-inners{
+    transform: rotateY(0deg);
+}
+
+.card5{
+    background-image:  linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/mern-stack-developer-course.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.card6{
+    background-image:  linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/graphic-design-course.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.commondigital{
+    width: 460px;
+    height: 450px;
+    /* border: 2px solid black; */
+    margin-top: 30px;
+}
+
+.commondigital h2{
+    text-align: center;
+    color: white;
+    margin-top: -2%;
+    font-size: 28px;
+}
+.card7{
+    background-image: linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/video-editing-course.png);
+    background-size: 460px 450px;
+    background-position: center;
+}
+
+
+
+.card8{
+    background-image: linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/data-analysis-course.jpg);
+    box-sizing: border-box;
+    background-position: center;
+    background-size: 460px 450px;
+}
+
+.card9{
+    background-image: linear-gradient(transparent, #273c66),url(https://www.hanumanttechnology.com/services_img/autocad-course.avif);
+    background-position: center;
+    background-size: 460px 450px;
+}
+
+.card-inners{
+    width: 90%;
+    height: 90%;
+    background: rgba(17, 41, 88, 0.9);
+    margin-top: 22px;
+    margin-left: 25px;
+    transform: rotateY(90deg);
+    transition: all 0.3s ease;
+}
+
+.card-inners h3{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 42%;
+}
+
+.card7:hover h2{
+    font-size: 0px;
+}
+
+.best-services{
+    background-image: url(https://www.hanumanttechnology.com/images/module-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+.inner-best{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    line-height: 40px;
+}
+.inner-buttons{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.featured{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #21a7d0;
+    color: #21a7d0;
+    font-family: inherit;
+    font-weight: bold;
+    background: transparent;
+    width: 140px;
+    transition: all 0.3s ease;
+}
+.featured:hover{
+    background-color: #21a7d0;
+    color: white;
+}
+
+.featured-bg-image{
+    background-image: url(https://www.hanumanttechnology.com/images/featured-service-bg.png);
+    background-size: 100% 100%;
+    height: 870px;
+    padding-top: 100px;
+    background-attachment: fixed;
+
+}
+
+.container{
+    width: 340px;
+    height: 260px;
+    box-shadow:0px 0px 20px rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    transition: all 2s ease;
+    border-radius: 5px;
+}
+.iconBox{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbe00;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    
+    
+}
+.container p{
+    font-size: 20px;
+}
+.bi-database,.bi-wifi,.bi-messenger,.bi-dropbox,.bi-headphones,.bi-magic{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.container:hover .shadow{
+    animation: glow 2s linear 2;
+}
+.container:hover{
+    background-color: #171F32;
+    color: white;
+    transition: all 2s ease;
+    transform: scale(1.05);
+}
+
+
+
+@keyframes glow {
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 10px 10px gray;
+    }
+    100%{
+        transform: scale(1.4);
+        box-shadow: 5px 5px 10px 10px gray;
+    }
+}
+
+.below-featured1{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+.below-featured2{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 80px;
+}
+
+.placements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 10px
+
+}
+.companies{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.offers{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+.bg-image1{
+    background-image: url(https://www.hanumanttechnology.com/images/partition-bg2.jpg);
+    background-size: 100% 100%;
+    height: 620px;
+}
+.bg-image2{
+    background-image: url(https://www.hanumanttechnology.com/images/partition-bg1.jpg);
+    background-size: 100% 100%;
+    height: 620px;
+}
+
+.inner-content-bg-image2{
+    margin-left: 90px;
+    margin-top: 90px;
+    color: white;
+    line-height: 30px;
+}
+.inner-content-bg-image2 h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.inner-content-bg-image2 p{
+    font-size: 20px;
+}
+.inner-content-bg-image2 button{
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 170px;
+    border: none;
+    background: #ff5421;
+    border: 2px solid #ff5421;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.inner-content-bg-image2  button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.height{
+    height: 1000px;
+}
+.container-person{
+    width: 270px;
+    height: 190px;
+    background-color: #1C335F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.container-person h2{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+}
+.bi-person-fill,.bi-mortarboard-fill,.bi-award-fill,.bi-globe{
+    font-size: 60px;
+    color: goldenrod;
+}
+.career-card{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 70px;
+}
+
+.container-person:hover{
+    transform: translateY(-10px);
+}
+
+
+.brown-bg-image{
+    background-image: url(https://www.hanumanttechnology.com/images/module-bg1.jpg);
+    background-size: 100% 100%;
+    height: 300px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+
+.common-icons{
+    width: 250px;
+    height: 200px;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    line-height: 70px;
+}
+.common-icons h1{
+    font-size: 50px;
+    color: goldenrod;
+    
+}
+.bi-cloud,.bi-star,.bi-hand-thumbs-up,.bi-people-fill{
+    font-size: 50px;
+    font-weight: bold;
+}
+.common-icons p{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.subscribe{
+    height: 220px;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 50px;
+}
+
+.subscribe input{
+    width: 25%;
+    padding: 10px;
+}
+.subscribe p{
+    font-size: 20px;
+    color: gray;
+    word-spacing: 1px;
+}
+.subscribe button{
+    padding: 12px;
+    border: none;
+    background-color: #865ca7;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+}
+.subscribe button:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+article button{
+    background: #d50e0e;
+    padding: 13px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 170px;
+    position: absolute;
+    left: 88%;
+    top: 85%;
+    position: fixed;
+}
+
+footer{
+    position: relative;
+    height:74vh;
+    width: 100%;
+    padding: 50px 80px;
+    background-color: #042244;
+    margin-top: 20px;
+  
+  }
+  footer .container-footer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+  }
+  footer .container-footer .sec h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  footer .container-footer .sec p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  }
+  
+  
+  .our-services{
+    position: relative;
+  }
+  .our-services li{
+    list-style: none;
+  }
+  .our-services li a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ACB2BC;
+  
+  }
+  .contact-us{
+    position: relative;
+  }
+  .contact-us li{
+    list-style: none;
+  }
+  .contact-us li a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ACB2BC;
+  }
+  
+  
+  
+  .useful-links{
+    position: relative;
+  }
+  .useful-links li{
+    list-style: none;
+  }
+  .useful-links li a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ACB2BC;
+  
+  }
+  
+  .useful-links li a:hover {
+    font-weight: bold;
+   
+  
+  }
+  .useful-links li a:hover {
+  
+    transform: translate(5px);
+    transition: all 1 s ease-in-out;
+  
+  }
+  
+  
+  .our-services{
+    position: relative;
+  }
+  .our-services li{
+    list-style: none;
+  }
+  .our-services li a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    color: white; 
+  
+  }
+  .our-services li a:hover {
+    font-weight: bold;
+   
+  
+  }
+  .our-services li a:hover {
+  
+    transform: translate(5px);
+    transition: all 1 s ease-in-out;
+  
+  }
+  
+  
+  .social-icons{
+    margin-top: 20px;
+    color: #ACB2BC; 
+    display: flex;
+    grid-template-columns: repeat(4 40px);
+    gap: 15px;
+  }
+
+  
+
+  .btn input{
+    width: 80%;
+    padding: 16px;
+    border-radius:  8px 0px 0px 8px;
+    border: none;
+  }
+  .btn button{
+    padding: 13px;
+    border-radius: 0 8px 8px 0px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 50px;
+    font-family: inherit;
+    margin-left: -4px;
+  }
+  .social-icons li{
+    list-style: none;
+  
+  }
+  .social-icons li .icon1{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #00039d;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .social-icons li .icon2{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background: #1DA1F2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .social-icons li .icon3{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background:#E60023;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .social-icons li .icon4{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background: #0274B3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .social-icons li .icon5{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-image: linear-gradient(to right, red , yellow);
+    display: grid;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 4px;
+  }
+
+  .end hr{
+    height: 3px;
+    width: 90%;
+    margin-left: 8%;
+    background-color: white;
+  }
+  .end a{
+    color: white;
+  }
+  .end{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .end p{
+    margin-top: 15px;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/images/hanumant-technology-logo.png" alt="">
+        </div>
+        <div class="nav-items">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li class="service"><a href="">Services</a>
+                    <div class="service-container">
+                        <div class="developement-services">
+                            <h3>Developement Services</h3>
+                            <hr>
+                            <ul>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Website Developement</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>App Developement</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Wordpress
+                                        Developement</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Android Developement</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Android UI & UX
+                                        Design</a></li>
+                                <hr>
+
+                            </ul>
+                        </div>
+                        <div class="designing-services">
+                            <h3>Designing Services</h3>
+                            <hr>
+                            <ul>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Website Design</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Mobile UI Design</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Wordpress Theme
+                                        Design</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Responsive Website
+                                        Design</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Graphic Design</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Audio & Video
+                                        Editing</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Banner Design</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Logo Design</a></li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <div class="marketing-services">
+                            <h3>Marketing Services</h3>
+                            <hr>
+                            <ul>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Digital Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Search Engine
+                                        Optimization (SEO)</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Search Media
+                                        Optimization (SMO)</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Search Engine Marketing
+                                        (SEM)</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Email Marketing</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Content Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Google Adwords</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Googlr Adsense</a></li>
+                                <hr>
+                            </ul>
+                        </div>
+                        <div class="promotion-services">
+                            <h3>Promotion Services</h3>
+                            <hr>
+                            <ul>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Facebook Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Twitter Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Instagram Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>LinkedIn Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Youtube Marketing</a>
+                                </li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>PPC Marketing</a></li>
+                                <hr>
+                                <li><a href=""><span class="bi bi-chevron-compact-right"></span>Android App
+                                        Marketing</a></li>
+                                <hr>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Training</a></li>
+                <li><a href="">Placement</a></li>
+                <li class="branch"><a href="">Branches</a>
+                    <div class="bran">
+                        <ul>
+                            <li class="b1"><a href=""><span class="bi-circle"></span>&nbsp; Aliganj Lucknow</a></li>
+                            <hr>
+                            <li class="b2"><a href=""><span class="bi-circle"></span>&nbsp;Alambagh Lucknow</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-bg-image">
+        <div class="main-inner-content">
+            <h1>Best IT Company & No.1 Training Institute</h1>
+            <hr>
+            <p>Hanumant Technology is the Best IT Company & Training Institute in Lucknow.</p>
+            <p>We provide #1 IT Services and Training programs with 100% job placement.</p>
+        </div>
+    </div>
+
+
+    <!--Article-->
+    <article>
+        <button>Let's Talk</button>
+    </article>
+
+    <!--About US section-->
+
+    <div class="about">
+        <div class="abouts bg-image">
+            <div class="history common">
+                <i class="fas fa-money-check-alt"></i>
+                <h1>History</h1>
+            </div>
+            <div class="mission common">
+                <i class="fas fa-american-sign-language-interpreting"></i>
+                <h1>Mission & Vission</h1>
+            </div>
+            <div class="administration common">
+                <i class="fas fa-chart-line"></i>
+                <h1>Administration</h1>
+            </div>
+        </div>
+        <div class="abouts content">
+            <h1>About Us</h1>
+            <p>Hanumant Technology is established in the year 2018 with an aim to become the fastest IT Company and
+                internship training institute. We offer India's Best IT Services and Training Programs at an affordable
+                price. For the past year, we have built a reputation for creating a positive return on investment for
+                our students and clients.
+                <br> <br><br>
+                Hanumant Technology brings a group of talented IT experts who see every project as a step towards
+                reaching out to an audience. To develop the best marketing, strategic, and technical skills in order to
+                address real-life issues and develop innovative smart solutions for optimizing career growth.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="super-card">
+
+        <div class="card">
+            <div class="card1 commoncard">
+                <h2>100% JOB ORIENTED COURSES</h2>
+                <h1>Hanumant Technology Training Programs</h1>
+            </div>
+            <div class="card2 commoncard">
+                <div class="card-inner">
+                    <h3>Website Designing Course & Training</h3>
+                    <!-- <h3><a href="">Read More</a></h3> -->
+                </div>
+                <h2>Website Designing Course</h2>
+            </div>
+            <div class="card3 commoncard">
+                <div class="card-inner">
+                    <h3>Website Developement Course & Training</h3>
+                </div>
+                <h2>Website Developement Course</h2>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card4 commoncard">
+                <div class="card-inner">
+                    <h3>Full-Stack Developement Course & Training</h3>
+                    <!-- <h3><a href="">Read More</a></h3> -->
+                </div>
+                <h2>Full-Stack Developement Course</h2>
+            </div>
+            <div class="card5 commoncard">
+                <div class="card-inner">
+                    <h3>MERN-Stack Developement Course & Training</h3>
+                    <!-- <h3><a href="">Read More</a></h3> -->
+                </div>
+                <h2>MERN-Stack Developement Course</h2>
+            </div>
+            <div class="card6 commoncard">
+                <div class="card-inner">
+                    <h3>Graphic Design Course & Training</h3>
+                </div>
+                <h2>Graphic Designing Course</h2>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card7 commondigital">
+                <div class="card-inners">
+                    <h3>MERN-Stack Developement Course & Training</h3>
+                    <!-- <h3><a href="">Read More</a></h3> -->
+                </div>
+                <h2>Video Editing Course</h2>
+            </div>
+            <div class="card8 commondigital">
+                <div class="card-inners">
+                    <h3>MERN-Stack Developement Course & Training</h3>
+                    <!-- <h3><a href="">Read More</a></h3> -->
+                </div>
+                <h2>Digital Marketing Course</h2>
+            </div>
+            <div class="card9 commondigital">
+                <div class="card-inners">
+                    <h3>MERN-Stack Developement Course & Training</h3>
+                    <!-- <h3><a href="">Read More</a></h3> -->
+                </div>
+                <h2>Autocad Course & Training</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="best-services">
+        <div class="inner-best">
+            <h1>Contact Us to Get Our Best Services</h1>
+            <p>India's Best IT Services & Training Programs</p>
+            <div class="inner-buttons">
+                <button class="featured">IT Services</button>
+                <button class="featured">Internship Training</button>
+                <button class="featured">Professional Jobs</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="featured-bg-image">
+
+        <h1 style="text-align: center;margin-bottom: 70px;font-size: 45px;">Top Featured <span style="color: purple;">IT
+                Services</span></h1>
+
+        <div class="below-featured1">
+            <div class="container">
+                <div class="iconBox">
+                    <span class="bi bi-database"></span>
+                    <div class="shadow"></div>
+                </div>
+                <p>Website Developement</p>
+                <p>App Developement</p>
+            </div>
+
+            <div class="container">
+                <div class="iconBox">
+                    <span class="bi bi-magic"></span>
+                    <div class="shadow"></div>
+                </div>
+                <p>Website Developement</p>
+                <p>App Developement</p>
+            </div>
+
+            <div class="container">
+                <div class="iconBox">
+                    <span class="bi bi-headphones"></span>
+                    <div class="shadow"></div>
+                </div>
+                <p>Website Developement</p>
+                <p>App Developement</p>
+            </div>
+        </div>
+
+
+        <div class="below-featured2 ">
+            <div class="container">
+                <div class="iconBox">
+                    <span class="bi bi-messenger"></span>
+                    <div class="shadow"></div>
+                </div>
+                <p>Website Developement</p>
+                <p>App Developement</p>
+            </div>
+
+            <div class="container">
+                <div class="iconBox">
+                    <span class="bi bi-dropbox"></span>
+                    <div class="shadow"></div>
+                </div>
+                <p>Website Developement</p>
+                <p>App Developement</p>
+            </div>
+
+            <div class="container">
+                <div class="iconBox">
+                    <span class="bi bi-wifi"></span>
+                    <div class="shadow"></div>
+                </div>
+                <p>Website Developement</p>
+                <p>App Developement</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="placements">
+        <h1>Our Placement Partners</h1>
+        <div class="companies">
+            <div class="tcs">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/tcs.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="hcl">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/hcl.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="accenture">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/accanture.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="techmahindra">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/t_mahindra.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="wipro">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/wipro.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+        </div>
+
+        <div class="companies">
+            <div class="tcs">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/tcs.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="hcl">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/hcl.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="accenture">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/accanture.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="techmahindra">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/t_mahindra.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="wipro">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/wipro.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+        </div>
+
+        <div class="companies">
+            <div class="tcs">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/tcs.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="hcl">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/hcl.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="accenture">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/accanture.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="techmahindra">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/t_mahindra.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+            <div class="wipro">
+                <img src="https://www.hanumanttechnology.com/HanumantAdmin/SliderImage/wipro.webp"
+                    style="border: 1px solid black;" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="offers">
+        <div class="bg-image1"></div>
+        <div class="bg-image2">
+            <div class="inner-content-bg-image2">
+                <h1>Best Offers - Join us Today</h1>
+                <p>It is one of the best IT company & training institutes in Lucknow. Hanumant Technology offers top IT
+                    services and 100% job-oriented training programs at a reasonable price.
+                    <br><br>
+                    Those interested in the internship and services on web design, website development, full-stack
+                    development, graphic design, video editing, digital marketing, AutoCAD, data science, data
+                    analytics, AI, and machine learning can apply now for getting the best deal.
+                </p>
+                <button>CONTACT NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="height">
+
+
+
+
+
+        <div class="career-card">
+            <div class="container-person">
+                <span class="bi bi-person-fill"></span>
+                <h2>Boost Your Skills & Career</h2>
+            </div>
+            <div class="container-person">
+                <span class="bi bi-globe"></span>
+                <h2>Grow Your Online Business</h2>
+            </div>
+            <div class="container-person">
+                <span class="bi bi-award-fill"></span>
+                <h2>Get Professional Jobs</h2>
+            </div>
+            <div class="container-person">
+                <span class="bi bi-mortarboard-fill"></span>
+                <h2>Join Us to set Your Goal</h2>
+            </div>
+        </div>
+
+
+        <div class="brown-bg-image">
+            <div class="common-icons">
+                <span class="bi bi-cloud"></span>
+                <h1>340+</h1>
+                <p>Projects</p>
+            </div>
+            <div class="common-icons">
+                <span class="bi bi-hand-thumbs-up"></span>
+                <h1>225060+</h1>
+                <p>Hours Work</p>
+            </div>
+            <div class="common-icons">
+                <span class="bi bi-people-fill"></span>
+                <h1>16900+</h1>
+                <p>Students</p>
+            </div>
+            <div class="common-icons">
+                <span class="bi bi-star"></span>
+                <h1>224+</h1>
+                <p>Clients</p>
+            </div>
+        </div>
+
+
+        <div class="subscribe">
+            <h1>Subscribe <span style="color: purple;">' US '</span></h1>
+            <p>!! Get Latest Notification to Subscribe Us !!</p>
+            <div class="">
+                <input type="email" name="" id="" placeholder="Type your e-mail">
+                <button>Submit</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-footer">
+
+
+                <div class="sec contact-us">
+                    <h2>CONTACT US</h2>
+                    <ul class="social-icon">
+                        <li><a href="tel:+91-9454461808"><i class="bi bi-telephone-plus"></i> +91-9454461808</a></li>
+                        <li><a href="tel:+91-6386198028"><i class="bi bi-telephone-plus"></i> +91-6386198028</a></li>
+                        <li><a href="mailto:info@hanumanttechnology.com"><i class="bi bi-envelope-at"></i>
+                                info@hanumanttechnology.com</a></li>
+                        <li><a href="mailto: hanumanttechnology@gmail.com"><i class="bi bi-envelope-at"></i>
+                                hanumanttechnology@gmail.com</a></li>
+                        <li><a href=""><i class="bi bi-geo-alt-fill"></i> Branch 1: 1st Floor, Sadafal Plaza, <br>
+                                Sector I, Aashiyana Lucknow-226012</a></li>
+                        <li><a href=""> <i class="bi bi-geo-alt-fill"></i> Branch 2: 2nd Floor, Hira Tower 1, <br>
+                                Sector C, Aliganj Lucknow-226024
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="sec useful-links">
+                    <h2>USEFULL LINKS</h2>
+                    <ul>
+                        <li class="bi bi-chevron-compact-right"><a href="">About Us</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Verify Certification</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Career</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Contact Us</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">FAQ</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Privacy & POlicy</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec our-services">
+                    <h2>OUR SERVICES</h2>
+                    <ul>
+                        <li class="bi bi-chevron-compact-right"><a href="">Website Development</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Website Designing</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Graphic Designing</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">Degital Marketing</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">App Design & Development</a></li>
+                        <li class="bi bi-chevron-compact-right"><a href="">AutoCAD</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec news">
+                    <h2>NEWSLETTER</h2>
+                    <p>Subscribe to our website to receive the <br>
+                        latest updates and offers.</p>
+
+                    <div class="btn">
+                        <input type="email" name="email" placeholder="Enter THe Email" required id="email">
+                        <button type="submit"><span class="bi bi-telegram"></span></button>
+                    </div>
+                    <ul class="social-icons">
+
+
+                        <li><a class="icon1" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="icon2" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a class="icon3" href="#"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a class="icon4" href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a class="icon5" href="#"><i class="bi bi-youtube"></i></a></li>
+
+                    </ul>
+                    
+                </div>
+                
+            </div>
+          <div class="end">
+            <hr>
+            <p>Copyright <span class="bi bi-c-circle"></span> 2018-24 <a href="">www.hanumanttechnology.com</a> All Rights Reserved </p>
+          </div>
+        </footer>
+
+        
+
+
+    </div>
+</body>
+
+</html>
